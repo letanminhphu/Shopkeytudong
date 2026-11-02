@@ -124,7 +124,6 @@ def buy():
     db.session.commit()
     
     qr_url = f"https://vietqr.io{BANK_ID}-{BANK_ACCOUNT}-compact2.png?amount={price}&addInfo=DH{order_code}&accountName={BANK_NAME}"
-    
     content = f"""
     <div class="card shadow mx-auto p-4 text-center" style="max-width: 500px;">
         <h4 class="fw-bold text-success">Vui Lòng Chuyển Khoản Đặt Hàng</h4>
